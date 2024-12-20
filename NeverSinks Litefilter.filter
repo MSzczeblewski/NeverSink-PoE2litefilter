@@ -464,39 +464,86 @@ SetFontSize 35
 # My highlight rules
 #--------------------------
 
-#---------- Mid Tier ---------
+#---------- Early Game ---------
 # Evasion/ES Body
 Show
+BaseType "Anchorite Garb" "Scalper's Jacket" "Advanced Hermit Garb" "Advanced Marabout Garb" "Advanced Wayfarer Jacket" "Advanced Anchorite Garb"
+SetBorderColor 67 66 166
+SetFontSize 45
+
+# Evasion/ES Boots
+Show
+BaseType "Hunting Shoes"
+SetBorderColor 67 66 166
+SetFontSize 45
+
+# Evasion/ES Gloves
+Show
+BaseType "Spiral Wraps" "Hunting Shoes" "Tribal Mask"
+SetBorderColor 67 66 166
+SetFontSize 45
+
+# Evasion/ES Helm 
+Show
+BaseType "Spiral Wraps" "Hunting Shoes" "Tribal Mask"
+SetBorderColor 67 66 166
+SetFontSize 45
+	
+#---------- Mid Tier ---------
+# Evasion/ES - Body
+Show
 BaseType "Advanced Waxed Jacket" "Advanced Scalper's Jacket"
+SetBorderColor 67 66 166
 SetFontSize 45
 
-# Evasion/ES Gloves/Boots/Helm - 70
+# Evasion/ES - Gloves
 Show
-BaseType "Advanced Linen Wraps" "Advanced Threaded Shoes" "Advanced Veiled Mask"
+BaseType "Advanced Linen Wraps" "Advanced Gauze Wraps" "Advanced Spiral Wraps"
+SetBorderColor 67 66 166
 SetFontSize 45
 
-# Evasion/ES Gloves/Boots/Helm - 75
+# Evasion/ES - Boots
 Show
-BaseType "Advanced Spiral Wraps" "Advanced Hunting Shoes" "Advanced Tribal Mask"
+BaseType "Advanced Hunting Shoes" "Advanced Threaded Shoes" "Advanced Frayed Shoes"
+SetBorderColor 67 66 166
+SetFontSize 45
+
+# Evasion/ES - Helm
+Show
+BaseType "Advanced Tribal Mask" "Advanced Veiled Mask" "Advanced Face Mask" "Advanced Hewn Mask"
+SetBorderColor 67 66 166
 SetFontSize 45
 
 #---------- High Tier ---------
 # Evasion/ES Body
 Show
 BaseType "Expert Waxed Jacket" "Expert Scalper's Jacket"
+SetBorderColor 67 66 166
 SetFontSize 45
 
-# Evasion/ES Gloves/Boots/Helm - 70
+# Evasion/ES - Gloves
 Show
-BaseType "Expert Linen Wraps" "Expert Threaded Shoes" "Expert Veiled Mask"
+BaseType "Expert Linen Wraps" "Expert Gauze Wraps" "Expert Spiral Wraps"
+SetBorderColor 67 66 166
 SetFontSize 45
 
-# Evasion/ES Gloves/Boots/Helm 75
+# Evasion/ES - Boots
 Show
-BaseType "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Tribal Mask"
+BaseType "Expert Hunting Shoes" "Expert Threaded Shoes" "Expert Frayed Shoes"
+SetBorderColor 67 66 166
+SetFontSize 45
+
+# Evasion/ES - Helm
+Show
+BaseType "Expert Tribal Mask" "Expert Veiled Mask" "Expert Face Mask" "Expert Hewn Mask"
+SetBorderColor 67 66 166
 SetFontSize 45
 
 #---------- Weapons ---------
+Show
+BaseType "Barrier Quarterstaff" "Slicing Quarterstaff"
+SetFontSize 45
+
 Show
 BaseType "Advanced Gothic Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Long Quarterstaff" "Advanced Barrier Quarterstaff" "Advanced Slicing Quarterstaff"
 SetFontSize 45
