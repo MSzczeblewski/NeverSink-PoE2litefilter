@@ -57,13 +57,13 @@ Show
 AreaLevel >= 70
 StackSize >= 1000
 BaseType == "Gold"
-SetTextColor 255 255 255
+SetTextColor 255 202 0
 SetBorderColor 255 255 255
 PlayEffect Orange Temp
 
 Show
 AreaLevel < 70
-StackSize >= 500
+StackSize >= 300
 BaseType == "Gold"
 SetTextColor 255 255 255
 SetBorderColor 255 255 255
@@ -191,9 +191,17 @@ PlayAlertSound 2 300
 
 # Special B Tier - Any Runes and Charms
 Show 
-BaseType " Rune" " Charm"
+BaseType "Rune"
 SetTextColor 0 240 190
 PlayEffect Cyan Temp
+
+#--------------------------
+# Hide Charms
+#--------------------------
+
+Hide
+BaseType "Charm"
+AreaLevel <= 80
 
 #--------------------------
 # Scroll of Wisdom High Level Hiding
@@ -450,6 +458,53 @@ Show
 Rarity Rare
 SetFontSize 35
 
+
+
+#--------------------------
+# My highlight rules
+#--------------------------
+
+#---------- Mid Tier ---------
+# Evasion/ES Body
+Show
+BaseType "Advanced Waxed Jacket" "Advanced Scalper's Jacket"
+SetFontSize 45
+
+# Evasion/ES Gloves/Boots/Helm - 70
+Show
+BaseType "Advanced Linen Wraps" "Advanced Threaded Shoes" "Advanced Veiled Mask"
+SetFontSize 45
+
+# Evasion/ES Gloves/Boots/Helm - 75
+Show
+BaseType "Advanced Spiral Wraps" "Advanced Hunting Shoes" "Advanced Tribal Mask"
+SetFontSize 45
+
+#---------- High Tier ---------
+# Evasion/ES Body
+Show
+BaseType "Expert Waxed Jacket" "Expert Scalper's Jacket"
+SetFontSize 45
+
+# Evasion/ES Gloves/Boots/Helm - 70
+Show
+BaseType "Expert Linen Wraps" "Expert Threaded Shoes" "Expert Veiled Mask"
+SetFontSize 45
+
+# Evasion/ES Gloves/Boots/Helm 75
+Show
+BaseType "Expert Spiral Wraps" "Expert Hunting Shoes" "Expert Tribal Mask"
+SetFontSize 45
+
+#---------- Weapons ---------
+Show
+BaseType "Advanced Gothic Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Long Quarterstaff" "Advanced Barrier Quarterstaff" "Advanced Slicing Quarterstaff"
+SetFontSize 45
+
+Show
+BaseType "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff" "Expert Long Quarterstaff" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff"
+SetFontSize 45
+
 #--------------------------
 # Hide Rules (only high level), super light edition
 #--------------------------
@@ -505,10 +560,10 @@ Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One 
 ### OPTIONAL RULE: Hide random bases
 # REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
 
-# Hide
-# Rarity <= Magic
-# Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
-# AreaLevel >= 65
+ Hide
+ Rarity <= Magic
+ Class "Foci" "Quivers" "One Hand Maces" "Staves" "Bows" "Wands" "Sceptres"
+ AreaLevel >= 65
 
 ### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
 
