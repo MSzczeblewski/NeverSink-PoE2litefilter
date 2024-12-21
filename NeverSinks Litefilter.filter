@@ -466,28 +466,28 @@ SetFontSize 35
 
 #---------- Early Game ---------
 # Evasion/ES Body
-Show
-BaseType "Anchorite Garb" "Scalper's Jacket" "Advanced Hermit Garb" "Advanced Marabout Garb" "Advanced Wayfarer Jacket" "Advanced Anchorite Garb"
-SetBorderColor 67 66 166
-SetFontSize 45
-
-# Evasion/ES Boots
-Show
-BaseType "Hunting Shoes"
-SetBorderColor 67 66 166
-SetFontSize 45
-
-# Evasion/ES Gloves
-Show
-BaseType "Spiral Wraps" "Hunting Shoes" "Tribal Mask"
-SetBorderColor 67 66 166
-SetFontSize 45
-
-# Evasion/ES Helm 
-Show
-BaseType "Spiral Wraps" "Hunting Shoes" "Tribal Mask"
-SetBorderColor 67 66 166
-SetFontSize 45
+	#Show
+	#BaseType "Anchorite Garb" "Scalper's Jacket" "Advanced Hermit Garb" "Advanced Marabout Garb" "Advanced Wayfarer Jacket" "Advanced Anchorite Garb"
+	#SetBorderColor 67 66 166
+	#SetFontSize 45
+	#
+	## Evasion/ES Boots
+	#Show
+	#BaseType "Hunting Shoes"
+	#SetBorderColor 67 66 166
+	#SetFontSize 45
+	#
+	## Evasion/ES Gloves
+	#Show
+	#BaseType "Spiral Wraps" "Hunting Shoes" "Tribal Mask"
+	#SetBorderColor 67 66 166
+	#SetFontSize 45
+	#
+	## Evasion/ES Helm 
+	#Show
+	#BaseType "Spiral Wraps" "Hunting Shoes" "Tribal Mask"
+	#SetBorderColor 67 66 166
+	#SetFontSize 45
 	
 #---------- Mid Tier ---------
 # Evasion/ES - Body
@@ -540,13 +540,13 @@ SetBorderColor 67 66 166
 SetFontSize 45
 
 #---------- Weapons ---------
-Show
-BaseType "Barrier Quarterstaff" "Slicing Quarterstaff"
-SetFontSize 45
+	#Show
+	#BaseType "Barrier Quarterstaff" "Slicing Quarterstaff"
+	#SetFontSize 45
 
-Show
-BaseType "Advanced Gothic Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Long Quarterstaff" "Advanced Barrier Quarterstaff" "Advanced Slicing Quarterstaff"
-SetFontSize 45
+	#Show
+	#BaseType "Advanced Gothic Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Long Quarterstaff" "Advanced Barrier Quarterstaff" "Advanced Slicing Quarterstaff"
+	#SetFontSize 45
 
 Show
 BaseType "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff" "Expert Long Quarterstaff" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff"
@@ -609,7 +609,12 @@ Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One 
 
  Hide
  Rarity <= Magic
- Class "Foci" "Quivers" "One Hand Maces" "Staves" "Bows" "Wands" "Sceptres"
+ Class "Foci" "Quivers" "One Hand Maces" "Staves" "Bows" "Wands" "Sceptres" "Shields"
+ AreaLevel >= 65
+
+ Hide
+ Rarity <= Magic
+ BaseArmour > 1
  AreaLevel >= 65
 
 ### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
