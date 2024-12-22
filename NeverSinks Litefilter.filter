@@ -404,9 +404,13 @@ MinimapIcon 1 Yellow Diamond
 # Rings, Amulets, Belts
 #--------------------------
 
+Hide
+Rarity Normal
+Class "Belts"
+
 Show
 Rarity Normal
-Class "Rings" "Amulets" "Belts"
+Class "Rings" "Amulets"
 SetFontSize 45
 
 Show
@@ -457,11 +461,11 @@ SetFontSize 35
 
 ## Uncomment this rule to hide low level rares in high level zones
 
-# Hide
-# Rarity Rare
-# DropLevel < 50
-# AreaLevel > 72
-# SetFontSize 35
+Show
+Rarity Rare
+DropLevel < 50
+AreaLevel > 70
+SetFontSize 25
 
 Show
 Rarity Rare
@@ -502,28 +506,28 @@ SetFontSize 35
 # Evasion/ES - Body
 Show
 BaseType "Advanced Waxed Jacket" "Advanced Scalper's Jacket"
-Rarity >= Magic
+Rarity <= Magic
 SetBorderColor 67 66 166
 SetFontSize 45
 
 # Evasion/ES - Gloves
 Show
 BaseType "Advanced Linen Wraps" "Advanced Gauze Wraps" "Advanced Spiral Wraps"
-Rarity >= Magic
+Rarity <= Magic
 SetBorderColor 67 66 166
 SetFontSize 45
 
 # Evasion/ES - Boots
 Show
 BaseType "Advanced Hunting Shoes" "Advanced Threaded Shoes" "Advanced Frayed Shoes"
-Rarity >= Magic
+Rarity <= Magic
 SetBorderColor 67 66 166
 SetFontSize 45
 
 # Evasion/ES - Helm
 Show
 BaseType "Advanced Tribal Mask" "Advanced Veiled Mask" "Advanced Face Mask" "Advanced Hewn Mask"
-Rarity >= Magic
+Rarity <= Magic
 SetBorderColor 67 66 166
 SetFontSize 45
 
@@ -553,16 +557,8 @@ SetBorderColor 67 66 166
 SetFontSize 45
 
 #---------- Weapons ---------
-	#Show
-	#BaseType "Barrier Quarterstaff" "Slicing Quarterstaff"
-	#SetFontSize 45
-
-	#Show
-	#BaseType "Advanced Gothic Quarterstaff" "Advanced Crescent Quarterstaff" "Advanced Long Quarterstaff" "Advanced Barrier Quarterstaff" "Advanced Slicing Quarterstaff"
-	#SetFontSize 45
-
 Show
-BaseType "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff" "Expert Long Quarterstaff" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff"
+BaseType "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff"  "Expert Slicing Quarterstaff"
 SetFontSize 45
 
 #--------------------------
