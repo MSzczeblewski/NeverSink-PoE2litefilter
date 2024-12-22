@@ -506,28 +506,28 @@ SetFontSize 35
 # Evasion/ES - Body
 Show
 BaseType "Advanced Waxed Jacket" "Advanced Scalper's Jacket"
-Rarity <= Magic
+Rarity >= Magic
 SetBorderColor 67 66 166
 SetFontSize 45
 
 # Evasion/ES - Gloves
 Show
 BaseType "Advanced Linen Wraps" "Advanced Gauze Wraps" "Advanced Spiral Wraps"
-Rarity <= Magic
+Rarity >= Magic
 SetBorderColor 67 66 166
 SetFontSize 45
 
 # Evasion/ES - Boots
 Show
 BaseType "Advanced Hunting Shoes" "Advanced Threaded Shoes" "Advanced Frayed Shoes"
-Rarity <= Magic
+Rarity >= Magic
 SetBorderColor 67 66 166
 SetFontSize 45
 
 # Evasion/ES - Helm
 Show
 BaseType "Advanced Tribal Mask" "Advanced Veiled Mask" "Advanced Face Mask" "Advanced Hewn Mask"
-Rarity <= Magic
+Rarity >= Magic
 SetBorderColor 67 66 166
 SetFontSize 45
 
