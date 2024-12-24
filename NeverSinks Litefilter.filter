@@ -415,7 +415,7 @@ MinimapIcon 1 Yellow Diamond
 #--------------------------
 
 Hide
-Rarity Normal
+Rarity <= Magic
 Class "Belts"
 
 Show
@@ -514,61 +514,98 @@ SetFontSize 35
 	
 #---------- Mid Tier ---------
 # Evasion/ES - Body
-Show
-BaseType "Advanced Waxed Jacket" "Advanced Scalper's Jacket"
-Rarity >= Magic
-SetBorderColor 67 66 166
-SetFontSize 45
-
-# Evasion/ES - Gloves
-Show
-BaseType "Advanced Linen Wraps" "Advanced Gauze Wraps" "Advanced Spiral Wraps"
-Rarity >= Magic
-SetBorderColor 67 66 166
-SetFontSize 45
-
-# Evasion/ES - Boots
-Show
-BaseType "Advanced Hunting Shoes" "Advanced Threaded Shoes" "Advanced Frayed Shoes"
-Rarity >= Magic
-SetBorderColor 67 66 166
-SetFontSize 45
-
-# Evasion/ES - Helm
-Show
-BaseType "Advanced Tribal Mask" "Advanced Veiled Mask" "Advanced Face Mask" "Advanced Hewn Mask"
-Rarity >= Magic
-SetBorderColor 67 66 166
-SetFontSize 45
+	#Show
+	#BaseType "Advanced Waxed Jacket" "Advanced Scalper's Jacket"
+	#Rarity >= Magic
+	#SetBorderColor 67 66 166
+	#SetFontSize 45
+	#
+	## Evasion/ES - Gloves
+	#Show
+	#BaseType "Advanced Linen Wraps" "Advanced Gauze Wraps" "Advanced Spiral Wraps"
+	#Rarity >= Magic
+	#SetBorderColor 67 66 166
+	#SetFontSize 45
+	#
+	## Evasion/ES - Boots
+	#Show
+	#BaseType "Advanced Hunting Shoes" "Advanced Threaded Shoes" "Advanced Frayed Shoes"
+	#Rarity >= Magic
+	#SetBorderColor 67 66 166
+	#SetFontSize 45
+	#
+	## Evasion/ES - Helm
+	#Show
+	#BaseType "Advanced Tribal Mask" "Advanced Veiled Mask" "Advanced Face Mask" "Advanced Hewn Mask"
+	#Rarity >= Magic
+	#SetBorderColor 67 66 166
+	#SetFontSize 45
 
 #---------- High Tier ---------
+#--- Evasion/ES Base ---
 # Evasion/ES Body
 Show
 BaseType "Expert Waxed Jacket" "Expert Scalper's Jacket"
-SetBorderColor 67 66 166
+Rarity <= Magic
+SetTextColor 42 124 117
+SetBorderColor 0 0 0
+SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
 # Evasion/ES - Gloves
 Show
-BaseType "Expert Linen Wraps" "Expert Gauze Wraps" "Expert Spiral Wraps"
-SetBorderColor 67 66 166
+BaseType "Expert Linen Wraps" "Expert Spiral Wraps"
+Rarity <= Magic
+SetTextColor 42 124 117
+SetBorderColor 0 0 0
+SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
 # Evasion/ES - Boots
 Show
-BaseType "Expert Hunting Shoes" "Expert Threaded Shoes" "Expert Frayed Shoes"
-SetBorderColor 67 66 166
+BaseType "Expert Hunting Shoes" "Expert Threaded Shoes"
+Rarity <= Magic
+SetTextColor 42 124 117
+SetBorderColor 0 0 0
+SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
 # Evasion/ES - Helm
 Show
-BaseType "Expert Tribal Mask" "Expert Veiled Mask" "Expert Face Mask"
-SetBorderColor 67 66 166
+BaseType "Expert Tribal Mask" "Expert Veiled Mask"
+Rarity <= Magic
+SetTextColor 42 124 117
+SetBorderColor 0 0 0
+SetBackgroundColor 20 20 0 0
+SetFontSize 45
+
+#--- ES Base ---
+# ES - Helm
+Show
+BaseType "Expert Feathered Tiara" "Expert Chain Tiara"
+Rarity <= Magic
+SetTextColor 42 124 117
+SetBorderColor 0 0 0
+SetBackgroundColor 20 20 0 0
+SetFontSize 45
+
+#--- Evasion Base ---
+# Evasion - Boots
+Show
+Rarity <= Magic
+BaseType "Expert Lizardscale Boots" "Expert Steeltoe Boots"
+SetTextColor 42 124 117
+SetBorderColor 0 0 0
+SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
 #---------- Weapons ---------
 Show
-BaseType "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff"  "Expert Slicing Quarterstaff"
+Rarity <= Magic
+BaseType "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff" "Expert Crackling Quarterstaff"
+SetTextColor 42 124 117
+SetBorderColor 0 0 0
+SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
 #--------------------------
@@ -576,38 +613,36 @@ SetFontSize 45
 #--------------------------
 
 Hide
-Quality = 0
-AreaLevel > 70
-Rarity <= Magic
+Quality <= 12
 Class "Flasks"
 
 Hide
-AreaLevel >= 78
+AreaLevel >= 70
 Rarity <= Magic
-DropLevel < 65
+DropLevel <= 65
 Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 75
+AreaLevel > 70
 Rarity <= Magic
 DropLevel < 64
 Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 73
+AreaLevel > 70
 Rarity <= Magic
 DropLevel < 60
 Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 72
+AreaLevel > 70
 Rarity <= Magic
 DropLevel < 55
 Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
-AreaLevel > 74
+AreaLevel > 70
 Rarity <= Magic
 DropLevel < 50
 Class "Quivers"
