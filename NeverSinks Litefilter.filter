@@ -544,45 +544,83 @@ SetFontSize 35
 	#SetBorderColor 67 66 166
 	#SetFontSize 45
 
+	##---------- High Tier ---------
+	##--- Evasion/ES Base ---
+	## Evasion/ES Body
+	#Show
+	#BaseType "Expert Waxed Jacket" "Expert Scalper's Jacket"
+	#Rarity <= Magic
+	#SetTextColor 42 124 117
+	#SetBorderColor 0 0 0
+	#SetBackgroundColor 20 20 0 0
+	#SetFontSize 45
+	#
+	## Evasion/ES - Gloves
+	#Show
+	#BaseType "Expert Linen Wraps" "Expert Spiral Wraps"
+	#Rarity <= Magic
+	#SetTextColor 42 124 117
+	#SetBorderColor 0 0 0
+	#SetBackgroundColor 20 20 0 0
+	#SetFontSize 45
+	#
+	## Evasion/ES - Boots
+	#Show
+	#BaseType "Expert Hunting Shoes" "Expert Threaded Shoes"
+	#Rarity <= Magic
+	#SetTextColor 42 124 117
+	#SetBorderColor 0 0 0
+	#SetBackgroundColor 20 20 0 0
+	#SetFontSize 45
+	#
+	## Evasion/ES - Helm
+	#Show
+	#BaseType "Expert Tribal Mask" "Expert Veiled Mask"
+	#Rarity <= Magic
+	#SetTextColor 42 124 117
+	#SetBorderColor 0 0 0
+	#SetBackgroundColor 20 20 0 0
+	#SetFontSize 45
+	#
+	##--- ES Base ---
+	## ES - Helm
+	#Show
+	#BaseType "Expert Feathered Tiara" "Expert Chain Tiara"
+	#Rarity <= Magic
+	#SetTextColor 42 124 117
+	#SetBorderColor 0 0 0
+	#SetBackgroundColor 20 20 0 0
+	#SetFontSize 45
+
 #---------- High Tier ---------
 #--- Evasion/ES Base ---
-# Evasion/ES Body
+# Evasion Body
 Show
-BaseType "Expert Waxed Jacket" "Expert Scalper's Jacket"
+BaseType "Expert Studded Vest"
 Rarity <= Magic
 SetTextColor 42 124 117
 SetBorderColor 0 0 0
 SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
-# Evasion/ES - Gloves
+# ES - Gloves
 Show
-BaseType "Expert Linen Wraps" "Expert Spiral Wraps"
+BaseType "Expert Intricate Gloves" "Expert Jewelled Gloves"
 Rarity <= Magic
 SetTextColor 42 124 117
 SetBorderColor 0 0 0
 SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
-# Evasion/ES - Boots
+# ES - Boots
 Show
-BaseType "Expert Hunting Shoes" "Expert Threaded Shoes"
+BaseType "Expert Feathered Sandals" "Expert Silk Slippers"
 Rarity <= Magic
 SetTextColor 42 124 117
 SetBorderColor 0 0 0
 SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
-# Evasion/ES - Helm
-Show
-BaseType "Expert Tribal Mask" "Expert Veiled Mask"
-Rarity <= Magic
-SetTextColor 42 124 117
-SetBorderColor 0 0 0
-SetBackgroundColor 20 20 0 0
-SetFontSize 45
-
-#--- ES Base ---
 # ES - Helm
 Show
 BaseType "Expert Feathered Tiara" "Expert Chain Tiara"
@@ -595,7 +633,7 @@ SetFontSize 45
 #---------- Weapons ---------
 Show
 Rarity <= Magic
-BaseType "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff" "Expert Crackling Quarterstaff"
+BaseType "Expert Gothic Quarterstaff" "Expert Crescent Quarterstaff"
 SetTextColor 42 124 117
 SetBorderColor 0 0 0
 SetBackgroundColor 20 20 0 0
