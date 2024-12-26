@@ -119,7 +119,7 @@ SetTextColor 20 240 240
 SetBorderColor 20 240 240
 SetFontSize 35
 
-Show
+Hide
 BaseType "Uncut Support Gem"
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
@@ -190,10 +190,13 @@ PlayEffect Cyan
 PlayAlertSound 2 300
 
 # Special B Tier - Any Runes and Charms
-Show 
-BaseType "Rune"
+Show
+BaseType "Iron Rune"
 SetTextColor 0 240 190
 PlayEffect Cyan Temp
+
+Hide
+BaseType "Rune"
 
 #--------------------------
 # Hide Charms
@@ -589,16 +592,6 @@ SetBorderColor 0 0 0
 SetBackgroundColor 20 20 0 0
 SetFontSize 45
 
-#--- Evasion Base ---
-# Evasion - Boots
-Show
-Rarity <= Magic
-BaseType "Expert Lizardscale Boots" "Expert Steeltoe Boots"
-SetTextColor 42 124 117
-SetBorderColor 0 0 0
-SetBackgroundColor 20 20 0 0
-SetFontSize 45
-
 #---------- Weapons ---------
 Show
 Rarity <= Magic
@@ -617,9 +610,9 @@ Quality <= 12
 Class "Flasks"
 
 Hide
-AreaLevel >= 70
+AreaLevel >= 76
 Rarity <= Magic
-DropLevel <= 65
+DropLevel <= 75
 Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
